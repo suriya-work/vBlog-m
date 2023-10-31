@@ -66,9 +66,9 @@ function CreateBlog() {
       <div className="w-[80%]">
         <div className="flex my-5">
           <button onClick={() => navigate(-1)}>
-            <BiArrowBack  size={24} color="#a7a7a7"/>
+            <BiArrowBack  size={24} color="#ff5c35"/>
           </button>
-          <h1 className="text-blue-600 font-extrabold text-[30px] ml-4 ">
+          <h1 className="text-[#ff5c35] font-extrabold text-[30px] ml-4 ">
             Create a New Blog
           </h1>
         </div>

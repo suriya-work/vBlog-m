@@ -33,7 +33,7 @@ function Login() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center h-[50vh]">
+    <div className="flex flex-col justify-center items-center h-[51.5vh]">
       <h2>Login Form</h2>
       <form className="w-[50%] flex flex-col" onSubmit={login}>
         <input
@@ -52,7 +52,7 @@ function Login() {
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
-        <button type="submit" className="bg-green-700 text-white p-3 rounded">
+        <button type="submit" className="bg-[#ff5c35] text-white p-3 rounded">
           Login
         </button>
       </form>

@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import spin from "../../../public/spin.svg";
 import { LuCalendarDays } from "react-icons/lu";
-import { GrFormView } from "react-icons/gr";
+// import { GrFormView } from "react-icons/gr";
+import { TfiWrite } from "react-icons/tfi";
 import { format } from "date-fns";
 const Card = () => {
   const [posts, setPosts] = useState(null);
   useEffect(() => {
     fetch("http://localhost:3001/post").then((res) =>
       res.json().then((posts) => setPosts(posts))
+
     );
   }, []);
 
@@ -52,14 +54,15 @@ const Card = () => {
                         {format(new Date(data.createdAt), "MMM d, yyyy")}
                       </time>
                     </div>
-                    <div className="flex items-center">
-                      <GrFormView size={28} />
-                      <p>{data["writer"]["username"]}</p>
+                    <div className="flex items-center ml-2">
+                      {/* <GrFormView size={28} /> */}
+                      <TfiWrite size={14} />
+                      <p className="ml-2">{data["writer"]["username"]}</p>
                     </div>
                   </div>
                   <div className="mt-5">
                     <Link to={`post/${data._id}`} className="text-[14px]">
-                      <button className="w-[310px] h-[40px]  border-[2px] rounded-[20px] hover:bg-blue-600 hover:border-transparent hover:text-[#fff]">
+                      <button className="w-[310px] h-[40px]  border-[2px] rounded-[20px] hover:bg-[#ff5c35] hover:border-transparent hover:text-[#fff]">
                         Read More
                       </button>
                     </Link>

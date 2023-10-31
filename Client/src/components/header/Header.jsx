@@ -10,6 +10,7 @@ import { useState } from "react";
 import { UserContext } from "../../userContext";
 import user from "../../../public/user.jpg";
 import SearchBar from "../serach/SearchBar";
+import blog from '../../../public/image/blog.png'
 
 export default function Header() {
   const [isActive, setisActive] = useState(false);
@@ -53,14 +54,7 @@ export default function Header() {
               <div className="flex items-center justify-between sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 md:flex hidden items-center ">
                   <Link to={"/"} className="mt-3 flex items-center">
-                    <button className="bg-[#3b82f6] rounded-full p-2">
-                      <TbBrandBlogger size={22} color="#fff" />
-                    </button>
-
-                    <h1 className="font-extrabold text-[#000] ml-2">
-                      BLOG.
-                      <span className="font-extrabold text-[#eee]">CO</span>
-                    </h1>
+                    <img className="w-[100px] h-[10%]" src={blog} alt="blog" />
                   </Link>
                 </div>
 
@@ -73,8 +67,10 @@ export default function Header() {
                   <>
                     <Link to="/create">
                       <div className="flex items-center cursor-pointer ">
-                        <TfiWrite className="mr-2" />
-                        Write
+                        <TfiWrite size={22} className="mr-2" />
+                        <p className="font-bold">
+                          Write
+                        </p>
                       </div>
                     </Link>
                     <div

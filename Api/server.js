@@ -22,7 +22,7 @@ mongoose
   .then(() => console.log("Connected  To Db!"))
   .catch((err) => console.log("Disconnect From DB!"));
 
-app.use(cors({ credentials: true, origin: "http://127.0.0.1:5173" }));
+app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));

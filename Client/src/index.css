@@ -40,8 +40,6 @@ body {
     z-index: 60;
 }
 
-/* .boeder-banner {
-    border-left: 2px solid #dadee7 !important;
-    border-right: 2px solid #dadee7 !important;
-    line-height: 1.5 !important;
-} */
+input::placeholder {
+    color: #fff;
+}

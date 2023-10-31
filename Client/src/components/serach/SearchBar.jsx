@@ -31,7 +31,7 @@ function SearchBar() {
         <div className="relative  lg:ml-[3rem] md:ml-[3.5rem] md:text-left">
           <div className="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
             <svg
-              className="w-4 h-4  dark:text-gray-400"
+              className="w-4 h-4 text-[#fff]"
               ariaHidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -49,7 +49,7 @@ function SearchBar() {
             type="text"
             placeholder="Search..."
             id="default-search"
-            className="block md:w-[80%] w-[200px] md:h-[40px] bg-[#f3f3f5] p-[6px] pl-10 text-sm text-gray-900 border rounded-[20px]  focus:ring-blue-500 focus:border-blue-500   "
+            className="block md:w-[100%] w-[200px] md:h-[40px] bg-[#ff5c35] p-[6px] pl-10 text-sm text-gray-900 border rounded-[10px]  focus:ring-blue-500 focus:border-blue-500   "
             required
             onChange={searchHandler}
             onClick={() => {
