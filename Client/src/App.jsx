@@ -19,7 +19,7 @@ import EditPost from "./components/editPost/EditPost";
 // imported card in and link to Blog
 const App = () => {
   return (
-    <>
+    <div className='min-h-screen grid grid-rows-[80px_1fr_auto]'>
       <UserContextProvider>
         <Header />
         <Routes>
@@ -34,7 +34,7 @@ const App = () => {
         </Routes>
         <Footer />
       </UserContextProvider>
-    </>
+    </div>
   );
 };
 

@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { UserContext } from "../../userContext";
+import cat from '../../../public/image/cat.png'
 
 function Login() {
   const [username, setUsername] = useState();
@@ -33,11 +34,11 @@ function Login() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center h-[51.5vh]">
-      <h2>Login Form</h2>
+    <div className="flex flex-col justify-center items-center mb-5">
+      <img src={cat} alt="attack" className="w-[100%] lg:w-[70%] h-[300px] m-auto mt-3 rounded-[15px]"/>
       <form className="w-[50%] flex flex-col" onSubmit={login}>
         <input
-          className="border rounded p-[10px] my-[10px]"
+          className="border rounded-[10px] p-[10px] my-[10px] outline-none"
           type="text"
           placeholder="username"
           name="username"
@@ -45,14 +46,18 @@ function Login() {
           onChange={(ev) => setUsername(ev.target.value)}
         />
         <input
-          className="border rounded p-[10px] my-[10px]"
+          className="border rounded-[10px] p-[10px] my-[10px] outline-none"
           type="text"
           placeholder="password"
           name="password"
           value={password}
           onChange={(ev) => setPassword(ev.target.value)}
         />
-        <button type="submit" className="bg-[#ff5c35] text-white p-3 rounded">
+        <div className="flex justify-between lg:ml-8 w-[100%] lg:w-[90%]">
+          <p className="text-[12px] lg:text-[14px] text-[#949191]">Remember me</p>
+          <p className="text-[12px] lg:text-[14px] text-[#949191]">Forget Password</p>
+        </div>
+        <button type="submit" className="bg-[#E0C3FC] text-white p-3 rounded-[10px] mt-4">
           Login
         </button>
       </form>

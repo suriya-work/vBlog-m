@@ -84,7 +84,7 @@ function EditPost() {
           <button onClick={() => navigate(-1)}>
             <BiArrowBack size={24} color="#a7a7a7" />
           </button>
-          <h1 className="text-blue-600 font-extrabold text-[30px] ml-4 ">
+          <h1 className="text-[#E0C3FC] font-extrabold text-[30px] ml-4 ">
             Edit Your Post
           </h1>
         </div>

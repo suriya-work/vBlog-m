@@ -15,7 +15,7 @@ const Card = () => {
   }, []);
 
   return (
-    <div className="container flex justify-center lg:block  mx-auto">
+    <div className="container flex justify-center lg:block  mx-auto mb-10">
       {posts ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center gap-10 mt-16  ">
           {posts.length > 0 &&
@@ -62,7 +62,7 @@ const Card = () => {
                   </div>
                   <div className="mt-5">
                     <Link to={`post/${data._id}`} className="text-[14px]">
-                      <button className="w-[310px] h-[40px]  border-[2px] rounded-[20px] hover:bg-[#ff5c35] hover:border-transparent hover:text-[#fff]">
+                      <button className="w-[310px] h-[40px]  border-[2px] rounded-[20px] hover:bg-[#E0C3FC] hover:border-transparent hover:text-[#fff]">
                         Read More
                       </button>
                     </Link>

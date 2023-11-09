@@ -14,12 +14,15 @@
 }
 
 body {
-    background-color: #ffff;
-    font-family: 'Poppins','Vazirmatn', sans-serif;
+    background-color: #cee0f1;
+    background-image: linear-gradient(62deg, #cee0f1 0%, #e3d3f1 100%);
+    
+    
+    font-family: 'Poppins', 'Vazirmatn', sans-serif;
 }
 
 .nav-menu {
-    color: #929191!important;
+    color: #929191 !important;
 
 }
 
@@ -32,7 +35,7 @@ body {
 .header-menu {
     position: absolute;
     left: 0;
-    top:8.5%;
+    top: 8.5%;
     padding: 0;
     background: #b8d9ec;
     width: 100%;

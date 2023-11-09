@@ -49,7 +49,7 @@ function SearchBar() {
             type="text"
             placeholder="Search..."
             id="default-search"
-            className="block md:w-[100%] w-[200px] md:h-[40px] bg-[#ff5c35] p-[6px] pl-10 text-sm text-gray-900 border rounded-[10px]  focus:ring-blue-500 focus:border-blue-500   "
+            className="block md:w-[300px] w-[200px] md:h-[35px] bg-[#E0C3FC] p-[6px] pl-10 text-sm rounded-[10px]"
             required
             onChange={searchHandler}
             onClick={() => {
@@ -60,7 +60,7 @@ function SearchBar() {
       </form>
 
       {searchMyData && searchMyData.length > 0 && (
-        <div className="bg-white w-[100%] md:w-[50%] lg:w-[30%] lg:h-[300px] shadow-2xl border rounded-2xl absolute z-[55] lg:left-[190px] md:left-[170px]   overflow-y-scroll scrollbar-hide ">
+        <div className="bg-white w-[100%] md:w-[50%] lg:w-[30%] lg:h-[300px] shadow-2xl border rounded-2xl absolute z-[55] lg:left-[125px] md:left-[170px]   overflow-y-scroll scrollbar-hide ">
           {searchMyData.map((search) => {
             return (
               <div

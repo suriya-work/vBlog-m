@@ -66,9 +66,9 @@ function CreateBlog() {
       <div className="w-[80%]">
         <div className="flex my-5">
           <button onClick={() => navigate(-1)}>
-            <BiArrowBack  size={24} color="#ff5c35"/>
+            <BiArrowBack size={24} color="#D4A373" />
           </button>
-          <h1 className="text-[#ff5c35] font-extrabold text-[30px] ml-4 ">
+          <h1 className="text-[#D4A373] font-extrabold text-[30px] ml-4 ">
             Create a New Blog
           </h1>
         </div>
@@ -78,14 +78,14 @@ function CreateBlog() {
             placeholder="title ..."
             value={title}
             onChange={(ev) => setTitle(ev.target.value)}
-            className="border my-2 px-2 py-1"
+            className="border my-2 px-2 py-2 outline-none"
           />
           <input
             type="text"
             placeholder="summery ..."
             value={summery}
             onChange={(ev) => setSummery(ev.target.value)}
-            className="border my-2 px-2 py-1"
+            className="border my-2 px-2 py-2 outline-none"
           />
           <input
             type="file"
@@ -100,11 +100,14 @@ function CreateBlog() {
           />
 
           <button
-            className="border my-2 px-2 py-1 bg-[#eee] disabled:text-white"
+            className="border my-2 px-2 py-2 bg-[#eee] disabled:text-white"
             type="submit"
             disabled={summery && title ? false : true}
           >
-            Create Post
+            <p className="text-[#D4A373]">
+
+              Create Post
+            </p>
           </button>
         </form>
       </div>

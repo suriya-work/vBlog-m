@@ -22,19 +22,19 @@ const About = () => {
   return (
     <div>
       {postInfo ? (
-        <div className="container w-[90%] md:w-[70%] lg:w-[50%]  mx-auto">
+        <div className="container w-[90%] md:w-[70%] lg:w-[50%]  mx-auto mb-10">
           <div
             key={postInfo._id}
             className="flex flex-col  justify-center mt-8"
           >
             <div className="flex flex-col  justify-center ">
               <h2
-                className=" text-[35px]  font-extrabold  text-[#000] tracking-wide"
+                className=" text-[35px]  font-extrabold  text-[#929191] tracking-wide"
                 dir="auto"
               >
                 {postInfo.title}
               </h2>
-              <p className="text-[20px] text-[#929191] mt-3  " dir="auto">
+              <p className="text-[20px] text-[#D4A373] mt-3  " dir="auto">
                 {postInfo.summery}
               </p>
               <div className="flex items-center mt-5">
@@ -51,7 +51,7 @@ const About = () => {
 
                 {userInfo.id === postInfo.writer._id && (
                   <Link to={`/edit/${postInfo._id}`} className="ml-auto ">
-                    <div className="mr-4 w-[30px] h-[20px] px-10 py-4 border rounded-3xl flex justify-center items-center hover:bg-blue-600 hover:text-white hover:border-transparent cursor-pointer">
+                    <div className="mr-4 w-[30px] h-[20px] px-10 py-4 border rounded-3xl flex justify-center items-center hover:bg-[#E0C3FC] hover:text-white hover:border-transparent cursor-pointer">
                       Edit
                     </div>
                   </Link>
@@ -83,14 +83,14 @@ const About = () => {
                 dir="auto"
               ></p>
 
-              <span className="text-[#929191] text-[25px]">,,,,,</span>
+              <span className="text-[#D4A373] text-[25px]">,,,,,</span>
             </div>
           </div>
 
           <div className="flex gap-5 justify-center items-center mt-10">
-            <FaInstagram size={22} color="" />
-            <FiFacebook size={22} color="" />
-            <FiTwitter size={22} color="" />
+            <FaInstagram size={22} color="#D4A373" />
+            <FiFacebook size={22} color="#D4A373" />
+            <FiTwitter size={22} color="#D4A373" />
           </div>
         </div>
       ) : (

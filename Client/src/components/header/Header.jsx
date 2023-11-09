@@ -54,7 +54,7 @@ export default function Header() {
               <div className="flex items-center justify-between sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 md:flex hidden items-center ">
                   <Link to={"/"} className="mt-3 flex items-center">
-                    <img className="w-[100px] h-[10%]" src={blog} alt="blog" />
+                    <img className="w-[80px] h-[10%]" src={blog} alt="blog" />
                   </Link>
                 </div>
 
@@ -105,7 +105,8 @@ export default function Header() {
                 {!username && (
                   <>
                     <Link to="/login">
-                      <AiOutlineUser size={24} />
+                      <button className="bg-[#E0C3FC] px-5 text-[#fff] text-[16px] font-bold mt-2 py-[8px] rounded-[10px]">LogIn</button>
+                      {/* <AiOutlineUser size={24} /> */}
                     </Link>
                   </>
                 )}
